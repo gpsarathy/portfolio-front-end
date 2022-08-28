@@ -1,0 +1,37 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SideBar from "../components/SideBar.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Content from "../components/ui/fragments/Content.astro";
+import AnimatedText from "../components/ui/txt/AnimatedText";
+import "../styles/globalStyles.css";
+
+const navLinks = ["Home", "Experience", "Skills"]
+---
+
+<Layout>
+	<main>
+		<div class="wrapper">
+			<Header>
+				<div class="min-h-[5vh] text-center">
+					<AnimatedText client:only="react"/>
+				</div>
+			</Header>
+			<nav class="main-nav p-4 ">
+				<ul class="gap-6">
+					{ navLinks.map((data) => <li>
+						<a class="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2" href={data}
+						>{data}</a>
+						</li>)}
+				</ul>
+			</nav>
+			<Content />
+			<aside class="side"><SideBar/></aside>
+			<div class="ad">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4013544.101253213!2d76.04399906640081!3d10.77475757080142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c582b1189633%3A0x559475cc463361f0!2sTamil%20Nadu!5e0!3m2!1sen!2sin!4v1661439220677!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			<Footer/>
+		</div>
+	</main>
+</Layout>

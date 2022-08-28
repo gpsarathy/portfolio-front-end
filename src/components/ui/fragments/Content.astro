@@ -1,0 +1,68 @@
+---
+import Me from '../../../assets/IMG_4754~2.jpg';
+---
+<script is:inline>
+  function copyToClipboard(elementIdToCopy, elementIdToNotifyOutcome) {
+    const contentToCopy = document.getElementById(elementIdToCopy).innerHTML;
+    const elementToNotifyOutcome = document.getElementById(
+      elementIdToNotifyOutcome
+    );
+
+    navigator.clipboard.writeText(contentToCopy).then(
+      function () {
+        elementToNotifyOutcome.classList.add("success");
+        elementToNotifyOutcome.innerHTML = "Email Copied!";
+      },
+      function () {
+        elementToNotifyOutcome.classList.add("failure");
+        elementToNotifyOutcome.innerHTML = "Sorry, did not work.";
+      }
+    );
+  }
+</script>
+<div class="content container">
+  <div class="container_content">
+    <div class="container_content_inner">
+      <div class="title">
+        <h1>Full Stack Developer</h1>
+      </div>
+      <div class="par">
+        <p>
+          A passionate learner of technologies. Studied Engineering in
+          Electrical and Electronics. Currently working as full stack software
+          developer and having fun in learning of different technology web
+          stacks and frameworks
+          <br /><br />
+          I design and build both Front-End Web UI interfaces ( Usually from React
+          ) and backend API's to serve remote data ( Usually from NodeJs, Java )
+          <br /><br />
+          Having worked on multiple programming languages and frameworks in my software
+          development career since 2018, I'm comfartable in picking up new one.
+        </p>
+      </div>
+      <div class="btns">
+        <button
+          class="btns_more"
+          onclick="copyToClipboard('copy_content','copy_status')"
+          >Ping Me !
+        </button>
+
+        <div id="copy_content" style="display:none;">
+          gpsarathymail@gmail.com
+        </div>
+
+        <div id="copy_status"></div>
+      </div>
+    </div>
+  </div>
+  <div class="container_outer_img">
+    <div class="img-inner">
+      <img
+        src={Me}
+        alt=""
+        class="container_img"
+      />
+    </div>
+  </div>
+</div>
+<div class="overlay"></div>

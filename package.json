@@ -1,0 +1,35 @@
+{
+  "name": "@example/basics",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "@astrojs/react": "^1.0.0",
+    "@astrojs/solid-js": "^1.0.0",
+    "@astrojs/tailwind": "^1.0.0",
+    "astro": "^1.0.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "solid-js": "^1.4.8"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.10.1",
+    "@mui/styled-engine-sc": "^5.10.1",
+    "astro-icon": "^0.7.3",
+    "react-icons": "^4.4.0",
+    "react-typist-component": "^1.0.4",
+    "solid-js": "^1.4.8",
+    "solid-toast": "^0.3.4",
+    "styled-components": "^5.3.5",
+    "TagCloud": "^2.2.0",
+    "universal-cookie": "^4.0.4"
+  }
+}

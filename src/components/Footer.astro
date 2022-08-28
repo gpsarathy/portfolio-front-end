@@ -1,0 +1,26 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<style>
+    .main-footer {
+        grid-area: footer;
+        height: 20vh;
+    }
+</style>
+<footer class="main-footer bg-[color:var(--primary-color)] p-12">
+    <hr />
+    <br />
+    <div class="flex">
+        <p class="">Parthasarathy</p>
+        <div class="flex-grow"></div>
+        <section class="flex">
+            Site built with &nbsp<Icon
+                name="logos:astro"
+                inline={true}
+                size={40}
+                class="pb-2"
+            />
+        </section>
+    </div>
+</footer>
