@@ -1,7 +1,6 @@
 ---
 import { VscGithub, VscMail } from 'react-icons/vsc/index.js';
 import ThemeToggle from "./ThemeToggle";
-import Logo from '../PS_Logo.svg';
 ---
 <style>
     .main-head {
@@ -16,7 +15,7 @@ import Logo from '../PS_Logo.svg';
 </style>
 <header class="main-head bg-[color:var(--primary-color)]">
     <div class="header-row">
-    <a href="/"><img src={Logo} class="max-w-[4rem]"/></a>
+    <a href="/"><img src='./assets/PS_logo.svg' class="max-w-[4rem]"/></a>
     <div class="flex-grow"></div>
     <ThemeToggle client:only="react" />
     <div class="flex justify-between gap-x-6">
