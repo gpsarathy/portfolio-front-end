@@ -55,7 +55,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 
 export default function ThemeToggle() {
   const cookies = new Cookies();
-  const [checked, setChecked] = useState(false);
+  const [checked, setChecked] = useState(true);
 
   function setThemeColor(theme: string) {
     document.documentElement.style.setProperty("--primary-color", `var(--${theme}-primary-color)`);
