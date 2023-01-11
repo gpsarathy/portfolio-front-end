@@ -15,7 +15,7 @@ export default function SkillCloud() {
         if (IsTagCloudLoaded.current) return
 
         TagCloud('.tagcloud', texts, {
-            radius: 400,
+            radius: 300,
             maxSpeed: 'fast',
             initSpeed: 'fast',
             direction: 135,
@@ -25,7 +25,7 @@ export default function SkillCloud() {
         IsTagCloudLoaded.current = true
     }, [])
 
-    return (<div className='flex bg-gray-600'>
+    return (<div className='flex bg-[var(--bg-color)]'>
         <div className='flex-grow'></div>
         <div className="tagcloud">
         </div>

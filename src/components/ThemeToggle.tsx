@@ -64,7 +64,7 @@ export default function ThemeToggle() {
     document.documentElement.style.setProperty("--font-color", `var(--${theme}-font-color)`);
     document.documentElement.style.setProperty("--contrast-color", `var(--${theme}-contrast-color)`);
     if (theme === 'dark') {
-      cookies.set('theme', 'dark', { sameSite: true, expires: new Date(Date.now() + (1000 * 60 * 60 * 24 * 7)) });
+      cookies.set('theme', 'dark', { secure: true, sameSite: "strict", expires: new Date(Date.now() + (1000 * 60 * 60 * 24 * 7)) });
     } else {
       cookies.remove('theme');
     }

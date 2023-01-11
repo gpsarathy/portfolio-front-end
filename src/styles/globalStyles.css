@@ -10,13 +10,13 @@
     --dark-secondary-color: hsl(170, 100%, 20%);
     --dark-bg-color: hsl(0, 0%, 25%);
     --dark-font-color: hsl(0, 0%, 100%);
-    --dark-contrast-color: hsl(1, 80%, 68%);	
+    --dark-contrast-color: hsl(172, 92%, 53%);	
 
-    --primary-color: var(--bright-primary-color);
-    --secondary-color: var(--bright-secondary-color);
-    --bg-color: var(--bright-bg-color);
-    --font-color: var(--bright-font-color);
-    --contrast-color: #e6cf38;
+    --primary-color: var(--dark-primary-color);
+    --secondary-color: var(--dark-secondary-color);
+    --bg-color: var(--dark-bg-color);
+    --font-color: var(--dark-font-color);
+    --contrast-color: var(--dark-contrast-color);
 }
 
 h1 {
